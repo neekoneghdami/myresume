@@ -3,32 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neekon K Eghdami - Resume</title>
+    <title>Neekon K Eghdami - Portfolio & Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        header class="header">
+        <!-- Header Profile Banner -->
+        <header class="header">
             <h1>Neekon K Eghdami</h1>
             <p class="subtitle">Mechanical Engineering Student</p>
             <div class="contact-info">
                 <span>Calgary, AB</span> | 
                 <span>403-918-5337</span> | 
-                <span>neekoneghdami@gmail.com</span> | 
-                <span>Valid Alberta Class 5 License</span>
+                <a href="mailto:neekoneghdami@gmail.com">neekoneghdami@gmail.com</a> | 
+                <span>Class 5 License</span>
             </div>
         </header>
 
-        <!-- Summary -->
-        <section class="section">
-            <h2>Summary</h2>
-            <p>Aspiring and determined 2nd year mechanical engineer ready to explore opportunities and implement critical thinking, collaboration, and problem solving abilities. Strong interest towards mechanical design and systems.</p>
-        </section>
+        <!-- Navigation Tabs -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" onclick="openTab(event, 'summary')">Summary</button>
+            <button class="tab-btn" onclick="openTab(event, 'experience')">Experience & Projects</button>
+            <button class="tab-btn" onclick="openTab(event, 'skills')">Skills & Certs</button>
+            <button class="tab-btn" onclick="openTab(event, 'education')">Education</button>
+        </nav>
 
-        <!-- Education -->
-        <section class="section">
-            <h2>Education</h2>
+        <!-- Tab 1: Summary -->
+        <div id="summary" class="tab-content active">
+            <h2>About Me</h2>
+            <p>Aspiring and determined 2nd year mechanical engineer ready to explore opportunities and implement critical thinking, collaboration, and problem solving abilities. Strong interest towards mechanical design and systems[cite: 1].</p>
+            <div class="highlight-box">
+                <h3>Quick Highlights</h3>
+                <ul>
+                    <li>University of Alberta - B.Sc. Mechanical Engineering (2nd Year)[cite: 1]</li>
+                    <li>Hands-on experience in team-based engineering design projects[cite: 1]</li>
+                    <li>Equipped with cross-functional technical skills in Python, SQL, and CAD[cite: 1]</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab 2: Experience & Projects -->
+        <div id="experience" class="tab-content">
+            <h2>Professional Experience and Development</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <h3>Elastic Powered Car | University Project</h3>
+                    <span class="date">Feb 2026 - Apr 2026</span>
+                </div>
+                <ul>
+                    <li>Worked with fellow engineering students in building an elastic-powered car, spending time during and after class to meet strict performance metrics[cite: 1].</li>
+                    <li>Introduced to an engineering professional environment through constant team checkups and collaborative work sessions[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <h3>MATLAB Onramp | Online Course</h3>
+                    <span class="date">Sept 2026</span>
+                </div>
+                <ul>
+                    <li>Completed fundamental training in MATLAB programming, including variables and arrays[cite: 1].</li>
+                    <li>Developed practical skills for engineering calculations, problem-solving, and data analysis[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <h3>Google Data Analytics | Online Course</h3>
+                    <span class="date">Jun 2026 - Aug 2026</span>
+                </div>
+                <ul>
+                    <li>Gained practical experience managing large datasets and writing queries using Python and SQL[cite: 1].</li>
+                    <li>Enhanced competency in programming fundamentals and analytical problem-solving[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <h3>Revit Design | School Project</h3>
+                    <span class="date">Nov 2023 - Dec 2023</span>
+                </div>
+                <ul>
+                    <li>Participated in a competition involving developing a 3D digital house using Autodesk Revit[cite: 1].</li>
+                    <li>Gained technical experience in 2D engineering drawing in AutoCAD and 3D conceptual design[cite: 1].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab 3: Skills & Certificates -->
+        <div id="skills" class="tab-content">
+            <h2>Technical Skills & Certificates</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python, SQL, Data Ethics, Data Structures, Object Oriented Programming[cite: 1]</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CAD & Prototyping</h3>
+                    <p>AutoCAD, Autodesk Revit, Construction Drawing[cite: 1]</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><strong>Google Data Analytics Professional Certificate:</strong> Data analysis using Python and SQL[cite: 1].</li>
+                        <li><strong>WHMIS:</strong> Workplace hazardous materials handling awareness[cite: 1].</li>
+                        <li><strong>MATLAB:</strong> Problem-solving and data analytics training[cite: 1].</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Personal & Languages</h3>
+                    <p><strong>Soft Skills:</strong> Time Management, Problem Solving, Teamwork[cite: 1]</p>
+                    <p><strong>Languages:</strong> English, Farsi[cite: 1]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Education -->
+        <div id="education" class="tab-content">
+            <h2>Education History</h2>
             <div class="item">
                 <div class="item-header">
                     <h3>University of Alberta</h3>
@@ -43,77 +137,30 @@
                 </div>
                 <p><strong>High School Diploma</strong> | Completed[cite: 1]</p>
             </div>
-        </section>
-
-        <!-- Professional Experience and Development -->
-        <section class="section">
-            <h2>Professional Experience and Development</h2>
-            
-            <div class="item">
-                <div class="item-header">
-                    <h3>Elastic Powered Car | University Project</h3>
-                    <span class="date">February 2026 - April 2026</span>
-                </div>
-                <ul>
-                    <li>Worked with fellow engineering students in building an elastic-powered car. Spent time during and after class in order to ensure the car met performance requirements[cite: 1].</li>
-                    <li>Introduced to an engineering professional environment through constant team checkups and work sessions[cite: 1].</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>MATLAB Onramp | Online course</h3>
-                    <span class="date">September 2026 - September 2026</span>
-                </div>
-                <ul>
-                    <li>Completed fundamental training in MATLAB programming, including variables and arrays[cite: 1].</li>
-                    <li>Developed practical skills in MATLAB for engineering calculations, problem solving, and data analysis[cite: 1].</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>Google Data Analytics | Online Course</h3>
-                    <span class="date">June 2026 - August 2026</span>
-                </div>
-                <ul>
-                    <li>Gained practical experience in managing large datasets and writing queries using programming languages such as SQL and Python[cite: 1].</li>
-                    <li>Enhanced competency in programming fundamentals and analytical problem solving[cite: 1].</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>Revit Design | School Project</h3>
-                    <span class="date">November 2023 - December 2023</span>
-                </div>
-                <ul>
-                    <li>Participated in a competition involving developing a 3D digital house using Autodesk Revit[cite: 1].</li>
-                    <li>Gained technical experience in 2D engineering drawing in AutoCAD and 3D conceptual designs through Autodesk Revit[cite: 1].</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Programming:</strong> Python, SQL, Data Ethics, Data Structures, Object Oriented Programming[cite: 1]</li>
-                <li><strong>3D CAD and Prototyping:</strong> AutoCad, Autodesk Revit, Construction Drawing[cite: 1]</li>
-                <li><strong>Personal:</strong> Time Management, Problem Solving, Teamwork[cite: 1]</li>
-                <li><strong>Language:</strong> English, Farsi[cite: 1]</li>
-            </ul>
-        </section>
-
-        <!-- Certificates -->
-        <section class="section">
-            <h2>Certificates</h2>
-            <ul>
-                <li><strong>Google Data Analytics Professional Certificate:</strong> Training in data analysis using software such as python and SQL[cite: 1]</li>
-                <li><strong>WHMIS:</strong> Training in handling and awareness of workplace hazardous materials[cite: 1]</li>
-                <li><strong>MATLAB:</strong> Training in using Matlab for problem solving and data analysis[cite: 1]</li>
-            </ul>
-        </section>
+        </div>
     </div>
+
+    <!-- JavaScript to Handle Tab Switching -->
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabContent, tabBtns;
+            
+            // Hide all tab content
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            
+            // Remove active class from all buttons
+            tabBtns = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].className = tabBtns[i].className.replace(" active", "");
+            }
+            
+            // Show current tab and add active class to clicked button
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
